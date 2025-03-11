@@ -33,7 +33,13 @@ namespace UsodeClases.Modelos
         }
 
         //Metodos 
-        public string MostrarDatos()
+        //public string MostrarDatos()
+       // {
+           // return $"Nombre: {this.nombres}\nApellidos: {this.apellidos}\nDocumento: {this.docuemnto}\nEdad: {this.edad}\nEmail: {this.email}\nTelefono: {this.telefono}\nDireccion: {this.direccion}\n";
+       // }
+
+        //Aplicando Polimorfismo en el metodo ToString
+        public override string ToString()
         {
             return $"Nombre: {this.nombres}\nApellidos: {this.apellidos}\nDocumento: {this.docuemnto}\nEdad: {this.edad}\nEmail: {this.email}\nTelefono: {this.telefono}\nDireccion: {this.direccion}\n";
         }
